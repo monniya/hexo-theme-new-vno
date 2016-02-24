@@ -1,4 +1,4 @@
-hexo-vno
+hexo-new-vno
 ========
 
 这个主题是原创为[onevat的vno](https://github.com/onevcat/vno), 它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论和多说系统，Google Analytics,字体图标以及多种颜色。
@@ -45,7 +45,7 @@ $ git clone https://github.com/monniya/hexo-theme-vno.git themes/vno
 ### Enable
 
 设置全局的_config.yml 
-theme: vno
+theme: new-vno
 
 
 ## Configuration
