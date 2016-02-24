@@ -1,0 +1,82 @@
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  <% if (theme.social.weibo) { %>
+  <li class="navigation__item">
+    <a href="<%= theme.social.weibo%>" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+<% } %>
+
+  <!-- Github -->
+  <% if (theme.social.github) { %>
+  <li class="navigation__item">
+    <a href="<%= theme.social.github%>" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+<% } %>
+
+<!-- Stack Overflow -->
+        <% if (theme.social.stack_overflow) { %>
+        <li class="navigation__item">
+            <a href="<%= theme.social.stack_overflow %>" title="Stack Overflow" target="_blank">
+                <i class='social fa fa-stack-overflow'></i>
+                <span class="label">Stack Overflow</span>
+            </a>
+        </li>
+        <% } %>
+
+  <!-- Google Plus -->
+  <% if (theme.social["google_plus"]) { %>
+  <li class="navigation__item">
+    <a href="<%= theme.social['google_plus'] %>" title="Google+" target="_blank">
+      <i class='social fa fa-google-plus-square'></i>
+      <span class="label">Google+</span>
+    </a>
+  </li>
+<% } %>
+
+<!-- Facebook -->
+<% if (theme.social.facebook) { %>
+  <li class="navigation__item">
+    <a href="<%= theme.social.facebook%>" title="上Facebook找我" target="_blank">
+      <i class='social fa fa-facebook'></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+<% } %>
+  
+<!-- Twitter -->
+<% if (theme.social.twitter) { %>
+  <li class="navigation__item">
+    <a href="<%= theme.social.twitter%>" title="上Twitter找我" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+<% } %>
+  
+<% if (theme.rss) { %>
+  <li class="navigation__item">
+    <a href="<%- theme.rss %>" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+<% } %>
+<% if (config.email) { %>
+  <li class="navigation__item">
+    <a href="mailto:<%= config.email%>" title="邮件联系我" target="_blank">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+<% } %>
+
+  </ul>
+</nav>

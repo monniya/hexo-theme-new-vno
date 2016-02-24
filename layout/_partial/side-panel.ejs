@@ -1,0 +1,38 @@
+
+<header class="panel-cover <%= !is_home()?'panel-cover--collapsed':''%>" style="background-image: url(<%- theme.background.cover %>)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="<%= config.root %>" title="前往 <%= config.title %> 的主页"><img src="<%= theme.logo%>" width="80" alt="<%= config.title %> logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="<%= config.root %>" title="link to homepage for <%= config.title %>"><%= config.title %></a></h1>
+        <% if (config.subtitle) { %>
+        <span class="panel-cover__subtitle panel-subtitle"><%= config.subtitle %></span>
+        <% } %>
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"><%- config.description %></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            <% for (var i in theme.menu){ %>
+              <li class="navigation__item"><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+            <% } %>
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <%- partial('_partial/social', {}) %>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay <%= theme.background.color %>"></div>
+  </div>
+</header>

@@ -1,0 +1,29 @@
+menu:
+  #Archives: /archives
+  黄金屋: /favourite
+  时光机: /favourite/time.html
+  #我是: /aboutme
+rss: /atom.xml
+description: 
+social:
+  weibo: http://weibo.com/monniya
+  github: https://github.com/monniya
+  stack_overflow: 
+  facebook: 
+  twitter: 
+  google_plus: 
+
+page_comment: false
+logo: /images/avatar.jpg
+background:
+  cover: /images/background-cover.jpg
+  color: cover-purple
+
+archive_date_format: MMM DD
+fancybox: true
+
+duoshuo_shortname: 
+
+google_analytics: 
+favicon: /images/avatar-small.png
+

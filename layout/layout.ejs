@@ -1,0 +1,24 @@
+<%- partial('_partial/head') %>
+<body class="home-template no-js">
+    <%- js("http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js") %>
+    <%- js("js/main.js") %>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <%- partial('_partial/side-panel', {}) %>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <%- body %>
+
+            <%- partial('_partial/footer', {}) %>
+        </div>
+    </div>
+
+    
+
+    <%- partial('_partial/google_analytics') %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="main-post-list">
+    
+  <ol class="post-list">
+  <% page.posts.each(function(post){ %>
+    <%
+      var link = post.link || post.path;
+    %>
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="<%- config.root %><%- link%>" title="link to post.title"><%= post.title%></a></h2>
+      <p class="excerpt">
+    <% if (post.excerpt){ %>
+      <%= strip_html(post.excerpt) %>
+    <% } else { %>
+      <%= strip_html(post.content).substring(0, 250)%>
+    <% } %>&hellip;
+      </p>
+      <div class="post-list__meta"><%- partial('_partial/date',{post: post}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: post}) %></span><a class="btn-border-small" href="<%- config.root %><%- link%>">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  <% }) %>
+    
+  </ol>
+
+<% if (page.total > 1){ %>
+  <nav class="pagination" role="navigation">
+    <% if (page.prev){ 
+              if (page.prev == 1) {
+                 page.prev_link = "/#blog";
+              }
+    %>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.prev_link) %>">Prev</a>
+    <% } %>
+    <% if (page.next){ %>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.next_link) %>">Next</a>
+    <% } %>
+  </nav>
+<% } %>
+
+</div>
+
