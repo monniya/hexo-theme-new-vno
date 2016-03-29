@@ -81,11 +81,13 @@ body {
 }
 
 ::selection {
-  background: #f39ca4;
+  background: #4e97d8;
+  color: #fff;
 }
 
 ::-moz-selection {
-  background: #f39ca4;
+  background: #4e97d8;
+  color: #fff;
 }
 
 a {
@@ -774,6 +776,26 @@ i {
   outline: none;
 }
 
+.read-more {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  border-top: 1px solid #DDDDDD; 
+}
+
+.read-more-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%; 
+}
+
+.read-more-item-dim {
+  color: #4E97D8;
+  font-size: .8em; 
+  line-height: 1.8em;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -901,6 +923,11 @@ input[type="tel"]:-ms-input-placeholder {
 }
 
 @media all and (max-width: 960px) {
+
+.read-more-item {
+  padding-top: 1.2em;
+  width: 100%; 
+}
   .btn-mobile-menu {
     display: block;
   }
@@ -1041,4 +1068,5 @@ input[type="tel"]:-ms-input-placeholder {
     display: block;
     margin-bottom: .4em;
   }
+  
 }
