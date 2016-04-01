@@ -28,10 +28,11 @@
                  page.prev_link = "/#blog";
               }
     %>
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.prev_link) %>">Prev</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.prev_link) %>">← 最近</a>
     <% } %>
+    <span class="pagination__page-number" > <%= page.current %> / <%= page.total %> </span>
     <% if (page.next){ %>
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.next_link) %>">Next</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.next_link) %>">更早 →</a>
     <% } %>
   </nav>
 <% } %>

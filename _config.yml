@@ -6,11 +6,11 @@ menu:
 rss: /atom.xml
 description: 
 social:
-  weibo: http://weibo.com/monniya
+  weibo: 
   github: https://github.com/monniya
   stack_overflow: 
   facebook: 
-  twitter: 
+  twitter: https://twitter.com/onlymonniya
   google_plus: 
 
 page_comment: false
