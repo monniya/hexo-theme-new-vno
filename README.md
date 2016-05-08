@@ -2,8 +2,8 @@ hexo-new-vno
 ========
 
 这个主题是原创为[onevat的vno](https://github.com/onevcat/vno), 它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论和多说系统，Google Analytics,字体图标以及多种颜色。
-此主题的hexo版本由[空谷幽兰](http://mlongbo.com/)最先创建，[github下载地址](https://github.com/lenbo-ma/hexo-theme-vno),但是已不维护
-我加了一些功能及对bug的修复，所以重新创建一个
+此主题的hexo版本由[空谷幽兰](http://mlongbo.com/)最先创建，[github地址](https://github.com/lenbo-ma/hexo-theme-vno),但是已不维护
+我加了一些功能及对bug的修复，所以重新创建一个,[github地址](https://github.com/monniya/hexo-theme-new-vno.git)
 
 ## Demo Show
 
@@ -38,8 +38,8 @@ hexo-new-vno
 
 ### Install
 
-``` bash
-$ git clone https://github.com/monniya/hexo-theme-vno.git themes/vno
+``` bash  
+$ git clone https://github.com/monniya/hexo-theme-new-vno.git themes/vno
 ```
 
 ### Enable
