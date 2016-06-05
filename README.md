@@ -88,3 +88,11 @@ duoshuo_shortname:
 google_analytics: 
 favicon: /images/avatar-small.png
 
+### 文章
+喵神没有设置categories，只用tags
+例如：
+---
+title: 文章名称
+date: 2016-03-03 10:46:46
+tags: 分类
+---
