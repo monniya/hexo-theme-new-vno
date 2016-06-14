@@ -11,7 +11,7 @@ hexo-new-vno
 
 ![主页封面](source/images/show/home.png)
 
-![文章列表](source/images/show/list.png)
+![文章列表](source/images/show/list.jpeg)
 
 ## 封面
 
@@ -91,9 +91,9 @@ baidu_tongji: 百度统计识别码
 favicon: /images/avatar-small.png
 ```
 谷歌跟踪ID：
-![谷歌统计](source/images/show/google-analytics.png)
+![谷歌统计](source/images/show/google-analytics.jpeg)
 百度统计识别码：
-![百度统计](source/images/show/baidu_tongji.png)
+![百度统计](source/images/show/baidu_tongji.jpeg)
 
 ### 文章
 
@@ -106,4 +106,4 @@ date: 2016-03-03 10:46:46
 tags: 分类
 ---
 ```
-![百度统计](source/images/show/article.png)
+![百度统计](source/images/show/article.jpeg)
