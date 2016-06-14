@@ -36,19 +36,20 @@ hexo-new-vno
 
 ## Installation
 
-### Install
+### Install 安装
 
 ``` bash  
 $ git clone https://github.com/monniya/hexo-theme-new-vno.git themes/new-vno
 ```
 
-### Enable
+### Enable 主题启用设置
 
-设置全局的_config.yml 
+设置全局的<code>_config.yml</code>
 theme: new-vno
 
 
-## Configuration
+## Configuration 主题设置
+设置文件：<code>_config.yml</code>
 
 ```yml
 ＃menu子菜单，可自定义
@@ -85,9 +86,15 @@ fancybox: true
 # 多说的帐号名, 不配置则不启用，使用disqus请去全局_config.yml中配置disqus_shortname
 duoshuo_shortname: 
 
-google_analytics: 
+google_analytics: 谷歌跟踪ID
+baidu_tongji: 百度统计识别码
 favicon: /images/avatar-small.png
 ```
+谷歌跟踪ID：
+![谷歌统计](source/images/show/google-analytics.png)
+百度统计识别码：
+![百度统计](source/images/show/baidu_tongji.png)
+
 ### 文章
 
 喵神没有设置categories，只用tags
@@ -99,3 +106,4 @@ date: 2016-03-03 10:46:46
 tags: 分类
 ---
 ```
+![百度统计](source/images/show/article.png)
