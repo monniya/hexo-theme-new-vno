@@ -6,8 +6,10 @@
     <%
     var title = page.title;
     title = title ? (title + ' | ' + config.title) : (config.subtitle ? config.title + " | " + config.subtitle : config.title);
-
-    var description = page.description || theme.description || config.description;
+    var description = "";
+    if (page.description || theme.description || config.description) {
+        description = page.description || theme.description || config.description;
+    }
     if (!description) {
         if (page.excerpt) {
             description = strip_html(page.excerpt);
