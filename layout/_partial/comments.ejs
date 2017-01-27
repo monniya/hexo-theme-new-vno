@@ -12,10 +12,8 @@
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          //dsq.src = '/js/embed.js';
-          //将disqus使用https协议将大大提高显示速度
-          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-          //dsq.src = 'https://a.disquscdn.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
   </script>

@@ -2,12 +2,12 @@ hexo-new-vno
 ========
 
 这个主题是原创为[onevat的vno](https://github.com/onevcat/vno), 它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论和多说系统，Google Analytics,字体图标以及多种颜色。
-此主题的hexo版本由[空谷幽兰](http://mlongbo.com/)最先创建,但是已不维护
+此主题的hexo版本由[空谷幽兰](//mlongbo.com/)最先创建,但是已不维护
 我加了一些功能及对bug的修复，所以重新创建一个,[github地址](https://github.com/monniya/hexo-theme-new-vno.git)
 
 ## Demo Show
 
-[Demo: 我的博客](http://monniya.com)
+[Demo: 我的博客](https://monniya.com)
 
 ![主页封面](source/images/show/home.png)
 
@@ -58,14 +58,14 @@ menu:
   黄金屋: /favourite
   时光机: /favourite/time.html
   #我是: /aboutme
-＃rss需安装插件hexo-generator-feed，详细请看：http://monniya.com/2016/02/24/create-rss/
+＃rss需安装插件hexo-generator-feed，详细请看：https://monniya.com/2016/02/24/create-rss/
 rss: /atom.xml
 # description配置内容会出现在meta标签中，因此会被搜索引擎抓取
 description: 
 
 # 不填写的链接则不显示
 social:
-  weibo: http://weibo.com/monniya
+  weibo: https://weibo.com/monniya
   github: https://github.com/monniya
   stack_overflow: 
   facebook: 
