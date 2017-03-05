@@ -9,4 +9,8 @@
         &copy; <%- date(Date.now(), 'YYYY') %> - 本站使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题,
         由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
     </span>
+  <% if (page.mathjax){ %>
+        <%- partial('_partial/mathjax') %>
+ <% } %>  
 </footer>
+

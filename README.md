@@ -49,7 +49,7 @@ theme: new-vno
 
 
 ## Configuration 主题设置
-设置文件：<code>_config.yml</code>
+设置主题的配置文件：<code>_config.yml</code>
 
 ```yml
 ＃menu子菜单，可自定义
@@ -107,3 +107,18 @@ tags: 分类
 ---
 ```
 ![百度统计](source/images/show/article.jpeg)
+
+### 数学公式支持
+
+# mathjax
+mathjax: true
+由于资源考虑，默认是不加载mathjax的，若需使用请在文章头部添加：
+```yml
+如下示例：
+---
+title: 侧耳倾听我的心
+date: 2017-02-18 22:55:08
+tags: 观观影
+mathjax: true
+---
+```

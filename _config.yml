@@ -13,7 +13,7 @@ social:
   twitter: https://twitter.com/onlymonniya
   google_plus: 
 
-page_comment: false
+page_comment: true
 logo: /images/avatar.jpg
 background:
   cover: /images/background-cover.jpg
@@ -28,3 +28,5 @@ google_analytics: UA-78918255-1
 baidu_tongji: 9cdad07c755fa23f6aced510c6760e87
 favicon: /images/avatar-small.png
 
+#mathjax
+mathjax: true
