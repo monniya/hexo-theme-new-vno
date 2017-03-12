@@ -16,4 +16,8 @@
   </section>
 
 </article>
+
 <%- partial('_partial/read-more', {}) %>
+<% if (page.comment || theme.page_comment) { %>
+  <%- partial('_partial/comments',{}) %>
+<% } %>
