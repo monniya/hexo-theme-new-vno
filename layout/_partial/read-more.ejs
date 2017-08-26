@@ -12,7 +12,7 @@
                 <%= strip_html(page.prev.content).substring(0, 150)%>
                 <% } %>&hellip;
                 </p>
-                <div class="post-list__meta"><%- partial('_partial/date',{post: page.prev}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: page.prev}) %></span><a class="btn-border-small" href="<%- config.root %><%- page.prev.path %>">继续阅读</a></div>
+                <div class="post-list__meta"><%- partial('_partial/date',{post: page.prev}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: page.prev}) %></span><a class="btn-border-small" href="<%- config.root %><%- page.prev.path %>"><%= theme.excerpt_link %></a></div>
                            
             </div>
         <% } %>
@@ -28,7 +28,7 @@
                 <%= strip_html(page.next.content).substring(0, 150)%>
                 <% } %>&hellip;
                 </p>
-                <div class="post-list__meta"><%- partial('_partial/date',{post: page.next}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: page.next}) %></span><a class="btn-border-small" href="<%- config.root %><%- page.next.path %>">继续阅读</a></div>
+                <div class="post-list__meta"><%- partial('_partial/date',{post: page.next}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: page.next}) %></span><a class="btn-border-small" href="<%- config.root %><%- page.next.path %>"><%= theme.excerpt_link %></a></div>
                        
             </div>
         <% } %>
