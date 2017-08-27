@@ -14,7 +14,7 @@
       <%= strip_html(post.content).substring(0, 200)%>
     <% } %>&hellip;
       </p>
-      <div class="post-list__meta"><%- partial('_partial/date',{post: post}) %> &#8226; <span class="post-list__meta--tags tags">于&nbsp;<%- partial('_partial/tags',{post: post}) %></span><a class="btn-border-small" href="<%- config.root %><%- link%>">继续阅读</a></div>
+      <div class="post-list__meta"><%- partial('_partial/date',{post: post}) %> &#8226; <span class="post-list__meta--tags tags">于 <%- partial('_partial/tags',{post: post}) %></span><a class="btn-border-small" href="<%- config.root %><%- link%>"><%= theme.excerpt_link %></a></div>
       <hr class="post-list__divider" />
     </li>
   <% }) %>
@@ -28,11 +28,11 @@
                  page.prev_link = "/#blog";
               }
     %>
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.prev_link) %>">← 最近</a>
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="<%- url_for(page.prev_link) %>">&larr; <%= __('previous') %></a>
     <% } %>
-    <span class="pagination__page-number" > <%= page.current %> / <%= page.total %> </span>
+    <span class="pagination__page-number" >  <%= page.current %> / <%= page.total %> </span>
     <% if (page.next){ %>
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.next_link) %>">更早 →</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="<%- url_for(page.next_link) %>"><%= __('next') %> &rarr;</a>
     <% } %>
   </nav>
 <% } %>

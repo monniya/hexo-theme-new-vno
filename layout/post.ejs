@@ -2,9 +2,9 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <%- partial('_partial/date',{post: page}) %> &#8226; <span class="post-meta__tags tags">于&nbsp;<%- partial('_partial/tags',{post: page}) %> </span>
+      <%- partial('_partial/date',{post: page}) %> &#8226; <span class="post-meta__tags tags">于 <%- partial('_partial/tags',{post: page}) %> </span>
       <span class="page-pv">
-      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+       <%= __('read') %> <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>

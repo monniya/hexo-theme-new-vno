@@ -17,7 +17,7 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+              <li class="navigation__item"><a href="/#blog" title="<%= __('visitblog') %>" class="blog-button"><%= __('blog') %></a></li>
             <% for (var i in theme.menu){ %>
               <li class="navigation__item"><a href="<%- theme.menu[i] %>"><%= i %></a></li>
             <% } %>
