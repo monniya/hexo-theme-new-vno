@@ -31,6 +31,10 @@ favicon: /images/avatar-small.png
 #mathjax
 mathjax: true
 
+# 'Read more' button
 excerpt_link: 继续阅读
 
+# Footer message
 site_license: <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
+thanks_message: thanks to <a href="https://pages.github.com/">GitHub Pages</a> for free hosting.
+

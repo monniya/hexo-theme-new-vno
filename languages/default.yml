@@ -1,3 +1,5 @@
-newer: "Newer Post"
-older: "Older Post"
-read: "Read"
+newerpost: "Newer Post"
+olderpost: "Older Post"
+read: Read
+next: Next
+previous: Prev
