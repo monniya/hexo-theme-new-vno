@@ -4,7 +4,7 @@
   <!-- Weibo-->
   <% if (theme.social.weibo) { %>
   <li class="navigation__item">
-    <a href="<%= theme.social.weibo%>" title="我的微博" target="_blank">
+    <a href="<%= theme.social.weibo%>" title="<%= __('myweibo') %>" target="_blank">
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
@@ -14,7 +14,7 @@
   <!-- Github -->
   <% if (theme.social.github) { %>
   <li class="navigation__item">
-    <a href="<%= theme.social.github%>" title="查看我的GitHub主页" target="_blank">
+    <a href="<%= theme.social.github%>" title="<%= __('mygithub') %>" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -24,7 +24,7 @@
 <!-- Stack Overflow -->
         <% if (theme.social.stack_overflow) { %>
         <li class="navigation__item">
-            <a href="<%= theme.social.stack_overflow %>" title="Stack Overflow" target="_blank">
+            <a href="<%= theme.social.stack_overflow %>" title="<%= __('mystackoverflow') %>" target="_blank">
                 <i class='social fa fa-stack-overflow'></i>
                 <span class="label">Stack Overflow</span>
             </a>
@@ -34,7 +34,7 @@
   <!-- Google Plus -->
   <% if (theme.social["google_plus"]) { %>
   <li class="navigation__item">
-    <a href="<%= theme.social['google_plus'] %>" title="Google+" target="_blank">
+    <a href="<%= theme.social['google_plus'] %>" title="<%= __('mygoogleplus') %>" target="_blank">
       <i class='social fa fa-google-plus-square'></i>
       <span class="label">Google+</span>
     </a>
@@ -44,7 +44,7 @@
 <!-- Facebook -->
 <% if (theme.social.facebook) { %>
   <li class="navigation__item">
-    <a href="<%= theme.social.facebook%>" title="上Facebook找我" target="_blank">
+    <a href="<%= theme.social.facebook%>" title="<%= __('myfacebook') %>" target="_blank">
       <i class='social fa fa-facebook'></i>
       <span class="label">Facebook</span>
     </a>
@@ -54,7 +54,7 @@
 <!-- Twitter -->
 <% if (theme.social.twitter) { %>
   <li class="navigation__item">
-    <a href="<%= theme.social.twitter%>" title="上Twitter找我" target="_blank">
+    <a href="<%= theme.social.twitter%>" title="<%= __('mytwitter') %>" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
@@ -71,7 +71,7 @@
 <% } %>
 <% if (config.email) { %>
   <li class="navigation__item">
-    <a href="mailto:<%= config.email%>" title="邮件联系我" target="_blank">
+    <a href="mailto:<%= config.email%>" title="<%= __('myemail') %>" target="_blank">
       <i class='social fa fa-envelope'></i>
       <span class="label">Email</span>
     </a>
