@@ -1,13 +1,13 @@
 <footer class="footer">
     <span class="footer__copyright">
-        &copy; <%- date(Date.now(), 'YYYY') %> <%= config.author || config.title %><% if (theme.site_license) { %> - This site is licensed under a <%- theme.site_license %><% } %>
+        &copy; <%- date(Date.now(), 'YYYY') %> <%= config.author || config.title %><% if (theme.site_license) { %> - <%- theme.site_license %><% } %>
+       
     </span>
     <span class="footer__copyright">
-        Powered by <a href="http://hexo.io">Hexo</a>. <% if (theme.thanks_message) { %><%- theme.thanks_message %><% } %>
-    </span>
-    <span class="footer__copyright">
-        This site uses <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> theme, modified by <a href="https://monniya.com ">@Monniya</a> from <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, Original theme from <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
-    </span>
+            <% if (theme.theme_message) { %> - <%- theme.theme_message %><% } %>
+         </span>
+       
+    
   <% if (page.mathjax){ %>
         <%- partial('_partial/mathjax') %>
  <% } %>  
